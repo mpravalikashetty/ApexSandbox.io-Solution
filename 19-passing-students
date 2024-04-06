@@ -1,17 +1,9 @@
 public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
     //code here
-    Integer result=0;
-    if(passedExam==true){
-        result=result+1;
-    }
-    if(passedAssignments==true){
-        result=result+1;
-    }
-    if(passedProject==true){
-        result=result+1
-    }
-    if(result>=2){
-        return true
-    }
-    return false;
+   if((passedExam && passedAssignments) || (passedExam && passedProject) ||
+   (passedAssignments && passedProject)){
+       return true
+   }else{
+       return false;
+   }
 }
