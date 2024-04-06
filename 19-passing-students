@@ -1,6 +1,6 @@
 public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
     //code here
-   I/*nteger result=0;
+   /*Integer result=0;
    if(passedExam){
        result=result+1;
    }
