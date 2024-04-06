@@ -1,13 +1,13 @@
 public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
     //code here
     Integer result=0;
-    if(passedExam){
+    if(passedExam==true){
         result=result+1;
     }
-    if(passedAssignments){
+    if(passedAssignments==true){
         result=result+1;
     }
-    if(passedProject){
+    if(passedProject==true){
         result=result+1
     }
     if(result>=2){
