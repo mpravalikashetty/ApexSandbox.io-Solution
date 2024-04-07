@@ -1,0 +1,13 @@
+public Boolean isPrime(Integer num) {
+    //code here
+    Integer count;
+    for(int i=1;i<=num;i++){
+        if(System.Math.Mod(num,i)==0){
+            count=count+1
+        }
+    }
+    if(count==2){
+        return true;
+    }
+    return false;
+}
