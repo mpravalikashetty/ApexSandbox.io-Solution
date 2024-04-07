@@ -2,6 +2,5 @@ public String nameFromEmail(String email) {
     //code here
     String strsub=email.substring(0,email.indexOf('@'));
     String fullName=strsub.substring(0,strsub.indexOf('.')).capitalize()+' '+strsub.substring(strsub.indexOf('.'),strsub.length()).capitalize();
-    String firstName= (strsub.substring(0,strsub.indexOf('.'))).capitalize();
-    return firstName.capitalize();
+    return fullName;
 }
