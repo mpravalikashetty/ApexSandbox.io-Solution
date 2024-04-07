@@ -1,6 +1,6 @@
 public Boolean isPrime(Integer num) {
     //code here
-    Integer count;
+    Integer count=0;
     for(Integer i=1;i<=num;i++){
         if(System.Math.Mod(num,i)==0){
             count=count+1;
