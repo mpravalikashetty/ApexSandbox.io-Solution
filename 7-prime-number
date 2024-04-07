@@ -3,7 +3,7 @@ public Boolean isPrime(Integer num) {
     Int count;
     for(int i=1;i<=num;i++){
         if(System.Math.Mod(num,i)==0){
-            count=count+1
+            count=count+1;
         }
     }
     if(count==2){
