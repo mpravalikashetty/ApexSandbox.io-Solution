@@ -9,7 +9,7 @@ public String formatName(String firstName, String lastName) {
         if(firstName==null){
             return lastName;
         }else{
-            return firstName
+            return firstName;
         }
     }
 }
