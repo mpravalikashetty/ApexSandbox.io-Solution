@@ -1,5 +1,6 @@
 public String nameFromEmail(String email) {
     //code here
     Integer indexx=email.indexOf('@');
-    return indexx+'';
+    String strsub=email.substr(0,indexx);
+    return strsub;
 }
