@@ -2,26 +2,25 @@ public String changeTimeFormat(String strTime) {
     //code here
     if(strTime.contains('PM')){
         String hr=strTime.substring(0,strTime.indexOf(':'));
-        Switch on hr{
-            when '18'{
+            if(hr=='18'){
                 return strTime.replace(hr,'06');
             }
-            when '19'{
+            else if(hr=='19'){
                 return strTime.replace(hr,'07');
             }
-            when '20'{
+            else if(hr=='20'){
                 return strTime.replace(hr,'08');
             }
-            when '21'{
+            else if(hr=='21'){
                 return strTime.replace(hr,'09');
             }
-            when '22'{
+            else if(hr=='22'){
                 return  strTime.replace(hr,'10');
             }
-            when '23'{
+            else if(hr=='23'){
                 return strTime.replace(hr,'11');
             }
-            when '24'{
+            else if(hr=='24'){
                 return strTime.replace(hr,'12');
             }
             when else{
