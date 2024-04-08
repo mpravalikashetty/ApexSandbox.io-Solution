@@ -2,7 +2,8 @@ public String changeTimeFormat(String strTime) {
     //code here
     String hr=strTime.substring(0,strTime.indexOf(':'));
     if(strTime.contains('PM')){
-        return strTime.replace(hr,'06');
+         strTime.replace(hr,'06');
+         return strTime;
        /* Switch on hr{
             when '18'{
                 strTime.replace(hr,'06');
