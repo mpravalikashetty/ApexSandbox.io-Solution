@@ -23,7 +23,7 @@ public String changeTimeFormat(String strTime) {
             else if(hr=='24'){
                 return strTime.replace(hr,'12');
             }
-            when else{
+            else{
                 return strTime;
             }
         }
