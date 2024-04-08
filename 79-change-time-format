@@ -1,0 +1,38 @@
+public String changeTimeFormat(String strTime) {
+    //code here
+    String hr=strTime.substring(0,strTime.Index(':'));
+    Switch on hr{
+        when '18'{
+            strTime.replace(hr,'06');
+            break;
+        }
+        when '19'{
+            strTime.replace(hr,'07');
+            break;
+        }
+        when '20'{
+            strTime.replace(hr,'08');
+            break;
+        }
+        when '21'{
+            strTime.replace(hr,'09');
+            break;
+        }
+        when '22'{
+            strTime.replace(hr,'10');
+            break;
+        }
+        when '23'{
+            strTime.replace(hr,'11');
+            break;
+        }
+        when '24'{
+            strTime.replace(hr,'12');
+            break;
+        }
+        when else{
+            return strTime;
+        }
+    }
+    return strTime;
+}
