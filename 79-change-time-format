@@ -4,30 +4,29 @@ public String changeTimeFormat(String strTime) {
     if(strTime.contains('PM')){
         Switch on hr{
             when '18'{
-                strTime=strTime.replace(hr,'06');
+                return strTime.replace(hr,'06');
             }
             when '19'{
-                strTime=strTime.replace(hr,'07');
+                return strTime.replace(hr,'07');
             }
             when '20'{
-                strTime=strTime.replace(hr,'08');
+                return strTime.replace(hr,'08');
             }
             when '21'{
-                strTime=strTime.replace(hr,'09');
+                return strTime.replace(hr,'09');
             }
             when '22'{
-                strTime=strTime.replace(hr,'10');
+                return  strTime.replace(hr,'10');
             }
             when '23'{
-                strTime=strTime.replace(hr,'11');
+                return strTime.replace(hr,'11');
             }
             when '24'{
-                strTime=strTime.replace(hr,'12');
+                return strTime.replace(hr,'12');
             }
             when else{
                 return strTime;
             }
         }
     }
-    return strTime;
 }
