@@ -1,7 +1,7 @@
 public String changeTimeFormat(String strTime) {
     //code here
-    String hr=strTime.substring(0,strTime.indexOf(':'));
     if(strTime.contains('PM')){
+        String hr=strTime.substring(0,strTime.indexOf(':'));
         Switch on hr{
             when '18'{
                 return strTime.replace(hr,'06');
