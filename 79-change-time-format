@@ -26,7 +26,6 @@ public String changeTimeFormat(String strTime) {
             else{
                 return strTime;
             }
-        }
     }
     return strTime;
 }
