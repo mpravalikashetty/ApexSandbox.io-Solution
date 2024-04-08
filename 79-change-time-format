@@ -1,6 +1,6 @@
 public String changeTimeFormat(String strTime) {
     //code here
-    String hr=strTime.substring(0,strTime.index(':'));
+    String hr=strTime.substring(0,strTime.indexOf(':'));
     Switch on hr{
         when '18'{
             strTime.replace(hr,'06');
